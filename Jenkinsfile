@@ -4,7 +4,7 @@ pipeline {
     stage('clone repository') {
       steps {
         sh '''java -version
-mvn --version
+'$MVN_HOME' --version
 git --version'''
       }
     }
